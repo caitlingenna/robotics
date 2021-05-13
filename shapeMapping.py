@@ -12,8 +12,7 @@ def readSonar():
    	 x = robot.getSonarReading(s).getX()
    	 y = robot.getSonarReading(s).getY()
    	 if (x <= 1600 and x > -400) and (y <= 1600 and y > -400):
-   		 x = int((x + 400)/20) # 400 is added to make the range positive 0-2000. Then             
-                         divided by 20 to fit into the 0-100 grid.
+   		 x = int((x + 400)/20) # 400 is added to make the range positive 0-2000. Then divided by 20 to fit into the 0-100 grid.
    		 y = int((y + 400)/20)
    		 grid[x][y] = grid[x][y] + 1    
 
